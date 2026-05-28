@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Andrea Pinzón</title>
+    <link rel="icon" type="image/png" href="recursos/img/ISOTIPO AMARILLO.png">
+
+    <style>
+        /*CSS-Diseño, configurar en cascada(Esto si es un lenguaje de progra)*/
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color:darksalmon;
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 3px solid black;
+            background-color: darksalmon;
+        }
+        h1 {
+            color: #fff; /* Color de la letra blanco para que resalte el neón */
+            text-shadow: 
+            0 0 5px #fff, 
+            0 0 10px #fe6d13, 
+            0 0 20px #fe6d13, 
+            0 0 40px #fe6d13;
+        }   
+        footer img {
+            transition: transform 0.3s ease; /* Hace que el zoom sea fluido */
+            cursor: pointer;
+        }
+        footer img:hover {
+            transform: scale(1.15); /* Crece un 15% */
+        }
+        .tarjeta {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .tarjeta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y Tercera unidad</h1>
+    </header>
+    <main>
+    <class="contenedor-principal">
+    <div class="tarjeta">
+                <h3>Semana 1: Introducción a HTML</h3>
+                <p>Esta semana aprendí la estructura básica...</p>
+                
+                <div style="margin-top: 15px; width: 100%;">
+                    <iframe src="recursos/Introducción Arduino Pinzón (1).pdf" width="100%" height="600px" style="border: none; border-radius: 8px;">
+                        <p>Tu navegador no soporta ver el PDF directamente. 
+                            <a href="recursos/Introducción Arduino Pinzón (1).pdf" target="_blank">Haz clic aquí para descargarlo.</a>
+                        </p>
+                    </iframe>
+                </div>
+            </div>
+
+<div class="tarjeta">
+                <h3>Semana 2: Estilos con CSS</h3>
+                <p>Hoy aprendí a darle color a mi página...</p>
+                
+                <div style="margin-top: 15px; width: 100%;">
+                    <video src="recursos/Circuito 11A.mp4" controls style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.15);">
+                        Tu navegador no soporta la reproducción de este video.
+                    </video>
+                </div>
+            </div>
+
+</div>
+    </main>
+    <footer>
+        <span>@aandreapinzon</span>
+        <img src="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" height="55" width="300">
+    </footer>
+</body>
+</html>
